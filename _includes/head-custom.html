@@ -1,0 +1,32 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
+
+<script type="text/x-mathjax-config">
+  var font = "Asana-Math";
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [['\\[','\\]']],
+      processEscapes: true,
+    },
+    "SVG":{ 
+      font:font
+    },
+    "HTML-CSS": {
+      webFont: font,
+      imageFont: font,
+      preferredFont: font,
+      availableFonts: [],
+      scale: 85,
+      mtextFontInherit: true
+    }
+  }); 
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+
+<!-- end custom head snippets -->
